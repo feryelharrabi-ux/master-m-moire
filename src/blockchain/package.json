@@ -1,0 +1,17 @@
+{
+  "name": "log-integrity-anchor",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Optional Hardhat deployment for the log integrity anchor contract",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run deploy.js --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4"
+  }
+}

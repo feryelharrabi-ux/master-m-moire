@@ -1,0 +1,26 @@
+data:
+  raw_dir: data/raw
+  parsed_dir: data/parsed
+  tampered_dir: data/tampered
+  splits_dir: data/splits
+
+parser:
+  default_source: unknown
+
+sequence:
+  window_size: 20
+  group_by: source
+
+crypto:
+  hash_algorithm: sha256
+  signature_algorithm: ed25519
+
+ai:
+  random_state: 42
+  test_size: 0.2
+  output_dir: data/parsed
+
+blockchain:
+  rpc_url_env: RPC_URL
+  private_key_env: PRIVATE_KEY
+  contract_address_env: CONTRACT_ADDRESS
